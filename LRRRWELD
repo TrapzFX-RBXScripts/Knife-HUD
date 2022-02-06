@@ -1,0 +1,28 @@
+local module = {}
+
+function nWeld(WP0, WP1, WC0X, WC0Y, WC0Z, WC1X, WC1Y, WC1Z, Name)
+	local Joint = Instance.new("ManualWeld")
+	Joint.Parent = WP0.Parent
+	Joint.Part0 = WP0
+	Joint.Part1 = WP1
+	Joint.C0 = CFrame.new(WC0X, WC0Y, WC0Z)
+	Joint.C1 = CFrame.new(WC1X, WC1Y, WC1Z)
+	Joint.Name = Name
+	return {
+		Weld = Joint,
+		Base = CFrame.new(WC0X, WC0Y, WC0Z)
+	}
+end
+
+function module.createWelds(Character, CustomParent)
+	if not Character:FindFirstChild("Torso") then return error("This only works wit R6") end
+	local char = Character
+	local Welds = {}
+
+	Welds.LShoulder = nWeld(char["Torso"], char["Left Arm"], -1.5, 0.5, 0, 0, 0.5, 0, "Left Shoulder")
+	Welds.RShoulder = nWeld(char["Torso"], char["Right Arm"], 1.5, 0.5, 0, 0, 0.5, 0, "Right Shoulder")
+
+	return Welds
+end
+
+return module
