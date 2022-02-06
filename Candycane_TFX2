@@ -140,7 +140,7 @@ local require = function(module)
 		return getfenv(0).require(module)
 	else
 		local HttpService = game:GetService("HttpService")
-		local success, err = pcall(HttpService.GetAsync, HttpService, "https://pastebin.com/raw/"..tostring(module))
+		local success, err = pcall(HttpService.GetAsync, HttpService, "https://raw.githubusercontent.com/TrapzFX-RBXScripts/Knife-HUD/main/"..tostring(module))
 		if success then
 			return loadstring(err)()
 		else
@@ -149,7 +149,7 @@ local require = function(module)
 	end
 end
 
-local WM = require("6CHseiE0")
+local WM = require("LRRRWELD")
 local Welds: Welds = WM.createWelds(owner.Character)
 
 local equipped = false
