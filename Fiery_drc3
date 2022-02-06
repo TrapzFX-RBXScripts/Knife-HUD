@@ -1,0 +1,239 @@
+
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Tool0 = Instance.new("Tool")
+Model1 = Instance.new("Model")
+Part2 = Instance.new("Part")
+SpecialMesh3 = Instance.new("SpecialMesh")
+Part4 = Instance.new("Part")
+SpecialMesh5 = Instance.new("SpecialMesh")
+Part6 = Instance.new("Part")
+SpecialMesh7 = Instance.new("SpecialMesh")
+Attachment8 = Instance.new("Attachment")
+ParticleEmitter9 = Instance.new("ParticleEmitter")
+Attachment10 = Instance.new("Attachment")
+Attachment11 = Instance.new("Attachment")
+Trail12 = Instance.new("Trail")
+Weld13 = Instance.new("Weld")
+Weld14 = Instance.new("Weld")
+Tool0.Name = "Fiery"
+Tool0.Parent = mas
+Tool0.TextureId = "http://www.roblox.com/asset?id=128720392"
+Tool0.Grip = CFrame.new(0, -1, -0.100000001, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Tool0.GripPos = Vector3.new(0, -1, -0.10000000149011612)
+Model1.Name = "wings"
+Model1.Parent = Tool0
+Part2.Parent = Model1
+Part2.CFrame = CFrame.new(-12.1149673, 0.719333887, 9.1062355, 2.08616257e-07, -0.999999881, -2.39814835e-09, -0.999999881, -2.08616257e-07, -9.68499947e-10, -9.68498171e-10, -2.39814923e-09, -1)
+Part2.Orientation = Vector3.new(0, -180, -90)
+Part2.Position = Vector3.new(-12.114967346191406, 0.7193338871002197, 9.10623550415039)
+Part2.Rotation = Vector3.new(180, 0, 90)
+Part2.Color = Color3.new(1, 0, 0)
+Part2.Transparency = -111111114326016
+Part2.Size = Vector3.new(0.7418370246887207, 0.6167477965354919, 0.271213561296463)
+Part2.BottomSurface = Enum.SurfaceType.Smooth
+Part2.BrickColor = BrickColor.new("Really red")
+Part2.Material = Enum.Material.ForceField
+Part2.Reflectance = 1
+Part2.TopSurface = Enum.SurfaceType.Smooth
+Part2.brickColor = BrickColor.new("Really red")
+SpecialMesh3.Parent = Part2
+SpecialMesh3.MeshId = "rbxassetid://501815151"
+SpecialMesh3.Scale = Vector3.new(0.004999999888241291, 0.004074988886713982, 0.005000000353902578)
+SpecialMesh3.VertexColor = Vector3.new(0, 0, 10000)
+SpecialMesh3.TextureId = "rbxassetid://0"
+SpecialMesh3.MeshType = Enum.MeshType.FileMesh
+Part4.Parent = Model1
+Part4.CFrame = CFrame.new(-11.6949673, 0.719333887, 9.1062355, -2.08616257e-07, 0.999999881, 2.39814835e-09, -0.999999881, -2.08616257e-07, -9.68499947e-10, 9.68498171e-10, 2.39814923e-09, 1)
+Part4.Orientation = Vector3.new(0, 0, -90)
+Part4.Position = Vector3.new(-11.694967269897461, 0.7193338871002197, 9.10623550415039)
+Part4.Rotation = Vector3.new(0, 0, -90)
+Part4.Color = Color3.new(1, 0, 0)
+Part4.Transparency = -111111114326016
+Part4.Size = Vector3.new(0.7418370246887207, 0.6167477965354919, 0.271213561296463)
+Part4.BottomSurface = Enum.SurfaceType.Smooth
+Part4.BrickColor = BrickColor.new("Really red")
+Part4.Material = Enum.Material.ForceField
+Part4.Reflectance = 1
+Part4.TopSurface = Enum.SurfaceType.Smooth
+Part4.brickColor = BrickColor.new("Really red")
+SpecialMesh5.Parent = Part4
+SpecialMesh5.MeshId = "rbxassetid://501815151"
+SpecialMesh5.Scale = Vector3.new(0.004999999888241291, 0.004074988886713982, 0.005000000353902578)
+SpecialMesh5.VertexColor = Vector3.new(0, 0, 10000)
+SpecialMesh5.TextureId = "rbxassetid://0"
+SpecialMesh5.MeshType = Enum.MeshType.FileMesh
+Part6.Name = "Handle"
+Part6.Parent = Tool0
+Part6.CFrame = CFrame.new(-11.9068203, 1.5, 9.10639954, 0, 0, 1, 0, 1, 0, -1, 0, 0)
+Part6.Orientation = Vector3.new(0, 90, 0)
+Part6.Position = Vector3.new(-11.906820297241211, 1.5, 9.106399536132812)
+Part6.Rotation = Vector3.new(0, 90, 0)
+Part6.Size = Vector3.new(0.4000000059604645, 3, 0.699999988079071)
+Part6.BottomSurface = Enum.SurfaceType.Smooth
+Part6.TopSurface = Enum.SurfaceType.Smooth
+Part6.FormFactor = Enum.FormFactor.Custom
+Part6.formFactor = Enum.FormFactor.Custom
+SpecialMesh7.Parent = Part6
+SpecialMesh7.MeshId = "http://www.roblox.com/asset/?id=121944778  "
+SpecialMesh7.TextureId = "rbxassetid://8751761308"
+SpecialMesh7.MeshType = Enum.MeshType.FileMesh
+Attachment8.Parent = Part6
+Attachment8.WorldAxis = Vector3.new(0, 0, -1)
+Attachment8.WorldOrientation = Vector3.new(0, 90, 0)
+ParticleEmitter9.Parent = Attachment8
+ParticleEmitter9.Speed = NumberRange.new(2, 2)
+ParticleEmitter9.Color = ColorSequence.new(Color3.new(0.172549, 0.294118, 1),Color3.new(0.172549, 0.294118, 1))
+ParticleEmitter9.LightEmission = 1
+ParticleEmitter9.LightInfluence = 1
+ParticleEmitter9.Texture = "rbxassetid://8178537216"
+ParticleEmitter9.Transparency = NumberSequence.new(0.9906542301177979,0,1)
+ParticleEmitter9.ZOffset = -1
+ParticleEmitter9.Size = NumberSequence.new(0.625,0.12499988079071045,0)
+ParticleEmitter9.Acceleration = Vector3.new(0, 0, 1)
+ParticleEmitter9.Lifetime = NumberRange.new(1.25, 1.25)
+ParticleEmitter9.LockedToPart = true
+ParticleEmitter9.Rate = 11
+ParticleEmitter9.SpreadAngle = Vector2.new(10, -10)
+ParticleEmitter9.VelocitySpread = 10
+Attachment10.Parent = Part6
+Attachment10.Position = Vector3.new(0, -0.3897101879119873, 0.22188615798950195)
+Attachment10.WorldAxis = Vector3.new(0, 0, -1)
+Attachment10.WorldOrientation = Vector3.new(0, 90, 0)
+Attachment11.Parent = Part6
+Attachment11.CFrame = CFrame.new(0, 1.41691422, 0.221886158, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+Attachment11.Position = Vector3.new(0, 1.4169142246246338, 0.22188615798950195)
+Attachment11.WorldAxis = Vector3.new(0, 0, -1)
+Attachment11.WorldOrientation = Vector3.new(0, 90, 0)
+Trail12.Parent = Part6
+Trail12.Attachment0 = Attachment10
+Trail12.Attachment1 = Attachment11
+Trail12.Color = ColorSequence.new(Color3.new(0.227451, 0.431373, 1),Color3.new(0.227451, 0.431373, 1))
+Trail12.LightEmission = 1
+Trail12.LightInfluence = 1
+Trail12.Transparency = NumberSequence.new(0,0,0.04672902822494507,0.1339564323425293,0.2710280418395996,0.4953271150588989)
+Trail12.Lifetime = 0.4000000059604645
+Weld13.Name = "Part"
+Weld13.Parent = Part6
+Weld13.C0 = CFrame.new(0.000164031982, -0.780666113, -0.208147049, 9.68498171e-10, 2.39814923e-09, 1, -0.999999881, -2.08616257e-07, -9.68499947e-10, 2.08616257e-07, -0.999999881, -2.39814835e-09)
+Weld13.Part0 = Part6
+Weld13.Part1 = Part2
+Weld13.part1 = Part2
+Weld14.Name = "Part"
+Weld14.Parent = Part6
+Weld14.C0 = CFrame.new(0.000164031982, -0.780666113, 0.211853027, -9.68498171e-10, -2.39814923e-09, -1, -0.999999881, -2.08616257e-07, -9.68499947e-10, -2.08616257e-07, 0.999999881, 2.39814835e-09)
+Weld14.Part0 = Part6
+Weld14.Part1 = Part4
+Weld14.part1 = Part4
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = owner.Backpack
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
+
+
+local char = owner.Character
+local hum = char.Humanoid
+local hrp = char.HumanoidRootPart
+
+type SubWeld = {
+	Weld: SubWeld,
+	Base: CFrame
+}
+
+type Welds = {
+	LShoulder: SubWeld,
+	RShoulder: SubWeld,
+}
+
+local require = function(module)
+	if typeof(module) == "Instance" then
+		return getfenv(0).require(module)
+	else
+		local HttpService = game:GetService("HttpService")
+		local success, err = pcall(HttpService.GetAsync, HttpService, "https://raw.githubusercontent.com/TrapzFX-RBXScripts/Knife-HUD/main/"..tostring(module))
+		if success then
+			return loadstring(err)()
+		else
+			return error(string.format("Failed to load module: %s", err))
+		end
+	end
+end
+
+local WM = require("LRRRWELD")
+local Welds: Welds = WM.createWelds(owner.Character)
+
+local equipped = false
+local steb = false
+local throw = false
+local cd = false
+
+Tool0.Equipped:Connect(function()
+	equipped = true
+	Model1.Parent = script
+end)
+
+Tool0.Unequipped:Connect(function()
+	equipped = false
+	Model1.Parent = game.Lighting
+end)
+
+Part6.Touched:Connect(function(p)
+	if game.Players:GetPlayerFromCharacter(p.Parent) and steb == true and p.Parent.Humanoid.Health ~= 0 then
+		p.Parent.Humanoid.Health = 0
+		local sd = Instance.new("Sound",p.Parent.HumanoidRootPart) sd.SoundId = "rbxassetid://2017482557" sd.Volume = 2 sd.RollOffMaxDistance = 110 sd:Play()
+	end
+end)
+
+Tool0.Activated:Connect(function()
+	if cd == false then
+		cd = true
+		game:GetService("TweenService"):Create(Welds.RShoulder.Weld,TweenInfo.new(0.2,Enum.EasingStyle.Linear,Enum.EasingDirection.In,0,true,0),{C0 =Welds.RShoulder.Base*CFrame.new(0 + (0),0.1 + (0),0 + (0)) * CFrame.Angles(math.rad(58 + (0)),math.rad(100 + (0)),math.rad(0 + (0)))}):Play()
+		steb = true
+		wait(.1)
+		game:GetService("TweenService"):Create(Welds.RShoulder.Weld,TweenInfo.new(0.2,Enum.EasingStyle.Linear,Enum.EasingDirection.In,0,true,0),{C0 =Welds.RShoulder.Base*CFrame.new(0 + (0),0.1 + (0),0 + (0)) * CFrame.Angles(math.rad(53 + (0)),math.rad(110 + (0)),math.rad(60 + (0)))}):Play()
+		wait(0.2)
+		cd = false
+		steb = false
+	end
+end)
+
+while true do
+	task.wait()
+	local s = tick()
+	local alpha = 0.1
+	if equipped == true then
+		Welds.LShoulder.Weld.C0 =Welds.LShoulder.Weld.C0:Lerp(Welds.LShoulder.Base*CFrame.new(0 + (0),0 + (0),0 + (0)) * CFrame.Angles(math.rad(82 + (0)),math.rad(70 + (0)),math.rad(5 + (0))),alpha)
+		Welds.RShoulder.Weld.C0 =Welds.RShoulder.Weld.C0:Lerp(Welds.RShoulder.Base*CFrame.new(0 + (0),0 + (0),0 + (0)) * CFrame.Angles(math.rad(82 + (0)),math.rad(20 + (0)),math.rad(0 + (0))),alpha)
+	elseif equipped == false then
+		Welds.LShoulder.Weld.C0 =Welds.LShoulder.Base
+		Welds.RShoulder.Weld.C0 =Welds.RShoulder.Base
+	elseif steb == true and equipped == true then
+		Welds.LShoulder.Weld.C0 =Welds.LShoulder.Weld.C0
+		Welds.RShoulder.Weld.C0 =Welds.RShoulder.Weld.C0
+	elseif throw == true and equipped == true then
+		Welds.LShoulder.Weld.C0 =Welds.LShoulder.Weld.C0
+		Welds.RShoulder.Weld.C0 =Welds.RShoulder.Weld.C0
+	end
+end
+
