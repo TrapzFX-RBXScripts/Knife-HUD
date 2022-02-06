@@ -1,0 +1,303 @@
+
+--Converted with ttyyuu12345's model to script plugin v4
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+ScreenGui0 = Instance.new("ScreenGui")
+Frame1 = Instance.new("Frame")
+Frame2 = Instance.new("Frame")
+UIGridLayout3 = Instance.new("UIGridLayout")
+Frame4 = Instance.new("Frame")
+TextLabel5 = Instance.new("TextLabel")
+TextButton6 = Instance.new("TextButton")
+Frame7 = Instance.new("Frame")
+TextLabel8 = Instance.new("TextLabel")
+TextButton9 = Instance.new("TextButton")
+Frame10 = Instance.new("Frame")
+TextLabel11 = Instance.new("TextLabel")
+TextButton12 = Instance.new("TextButton")
+Frame13 = Instance.new("Frame")
+TextLabel14 = Instance.new("TextLabel")
+Frame15 = Instance.new("Frame")
+UIListLayout16 = Instance.new("UIListLayout")
+Frame17 = Instance.new("Frame")
+TextLabel18 = Instance.new("TextLabel")
+TextButton19 = Instance.new("TextButton")
+Frame20 = Instance.new("Frame")
+TextLabel21 = Instance.new("TextLabel")
+TextButton22 = Instance.new("TextButton")
+ScreenGui0.Name = "kniveui"
+ScreenGui0.Parent = mas
+ScreenGui0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Frame1.Parent = ScreenGui0
+Frame1.Position = UDim2.new(0.0137540577, 0, 0.0222743079, 0)
+Frame1.Size = UDim2.new(0.354045331, 0, 0.238468871, 0)
+Frame1.BackgroundColor = BrickColor.new("Black")
+Frame1.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Frame1.BorderColor = BrickColor.new("Institutional white")
+Frame1.BorderColor3 = Color3.new(1, 1, 1)
+Frame1.BorderSizePixel = 0
+Frame2.Parent = Frame1
+Frame2.Position = UDim2.new(0.0137540475, 0, 0.0222743135, 0)
+Frame2.Size = UDim2.new(0.970198989, 0, 0.950732827, 0)
+Frame2.BackgroundColor = BrickColor.new("Black")
+Frame2.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Frame2.BackgroundTransparency = 1
+Frame2.BorderColor = BrickColor.new("Institutional white")
+Frame2.BorderColor3 = Color3.new(1, 1, 1)
+Frame2.BorderSizePixel = 0
+UIGridLayout3.Parent = Frame2
+UIGridLayout3.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout3.CellSize = UDim2.new(0, 69, 0, 85)
+Frame4.Name = "ui"
+Frame4.Parent = Frame2
+Frame4.Size = UDim2.new(0.191412315, 0, 0.461027563, 0)
+Frame4.BackgroundColor = BrickColor.new("Dark taupe")
+Frame4.BackgroundColor3 = Color3.new(0.298039, 0.298039, 0.298039)
+Frame4.BorderColor = BrickColor.new("Institutional white")
+Frame4.BorderColor3 = Color3.new(1, 1, 1)
+Frame4.BorderSizePixel = 0
+TextLabel5.Parent = Frame4
+TextLabel5.Size = UDim2.new(1, 0, 1, 0)
+TextLabel5.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel5.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel5.BackgroundTransparency = 1
+TextLabel5.Font = Enum.Font.SourceSans
+TextLabel5.FontSize = Enum.FontSize.Size14
+TextLabel5.Text = "Candy Cane"
+TextLabel5.TextColor = BrickColor.new("Deep orange")
+TextLabel5.TextColor3 = Color3.new(1, 0.784314, 0)
+TextLabel5.TextSize = 14
+TextButton6.Parent = Frame4
+TextButton6.Size = UDim2.new(1, 0, 1, 0)
+TextButton6.BackgroundColor = BrickColor.new("Institutional white")
+TextButton6.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton6.BackgroundTransparency = 1
+TextButton6.Font = Enum.Font.SourceSans
+TextButton6.FontSize = Enum.FontSize.Size14
+TextButton6.Text = ""
+TextButton6.TextColor = BrickColor.new("Really black")
+TextButton6.TextColor3 = Color3.new(0, 0, 0)
+TextButton6.TextSize = 14
+Frame7.Name = "ui"
+Frame7.Parent = Frame2
+Frame7.Size = UDim2.new(0.191412315, 0, 0.461027563, 0)
+Frame7.BackgroundColor = BrickColor.new("Dark taupe")
+Frame7.BackgroundColor3 = Color3.new(0.298039, 0.298039, 0.298039)
+Frame7.BorderColor = BrickColor.new("Institutional white")
+Frame7.BorderColor3 = Color3.new(1, 1, 1)
+Frame7.BorderSizePixel = 0
+TextLabel8.Parent = Frame7
+TextLabel8.Size = UDim2.new(1, 0, 1, 0)
+TextLabel8.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel8.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel8.BackgroundTransparency = 1
+TextLabel8.Font = Enum.Font.SourceSans
+TextLabel8.FontSize = Enum.FontSize.Size14
+TextLabel8.Text = "DRC's Flame"
+TextLabel8.TextColor = BrickColor.new("Deep orange")
+TextLabel8.TextColor3 = Color3.new(1, 0.784314, 0)
+TextLabel8.TextSize = 14
+TextButton9.Parent = Frame7
+TextButton9.Size = UDim2.new(1, 0, 1, 0)
+TextButton9.BackgroundColor = BrickColor.new("Institutional white")
+TextButton9.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton9.BackgroundTransparency = 1
+TextButton9.Font = Enum.Font.SourceSans
+TextButton9.FontSize = Enum.FontSize.Size14
+TextButton9.Text = ""
+TextButton9.TextColor = BrickColor.new("Really black")
+TextButton9.TextColor3 = Color3.new(0, 0, 0)
+TextButton9.TextSize = 14
+Frame10.Name = "ui"
+Frame10.Parent = Frame2
+Frame10.Size = UDim2.new(0.191412315, 0, 0.461027563, 0)
+Frame10.BackgroundColor = BrickColor.new("Dark taupe")
+Frame10.BackgroundColor3 = Color3.new(0.298039, 0.298039, 0.298039)
+Frame10.BorderColor = BrickColor.new("Institutional white")
+Frame10.BorderColor3 = Color3.new(1, 1, 1)
+Frame10.BorderSizePixel = 0
+TextLabel11.Parent = Frame10
+TextLabel11.Size = UDim2.new(1, 0, 1, 0)
+TextLabel11.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel11.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel11.BackgroundTransparency = 1
+TextLabel11.Font = Enum.Font.SourceSans
+TextLabel11.FontSize = Enum.FontSize.Size14
+TextLabel11.Text = "Knife"
+TextLabel11.TextColor = BrickColor.new("Br. yellowish green")
+TextLabel11.TextColor3 = Color3.new(0.490196, 1, 0.305882)
+TextLabel11.TextSize = 14
+TextButton12.Parent = Frame10
+TextButton12.Size = UDim2.new(1, 0, 1, 0)
+TextButton12.BackgroundColor = BrickColor.new("Institutional white")
+TextButton12.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton12.BackgroundTransparency = 1
+TextButton12.Font = Enum.Font.SourceSans
+TextButton12.FontSize = Enum.FontSize.Size14
+TextButton12.Text = ""
+TextButton12.TextColor = BrickColor.new("Really black")
+TextButton12.TextColor3 = Color3.new(0, 0, 0)
+TextButton12.TextSize = 14
+Frame13.Parent = ScreenGui0
+Frame13.Position = UDim2.new(0.375080913, 0, 0.0222743079, 0)
+Frame13.Size = UDim2.new(0.0744336993, 0, 0.238468871, 0)
+Frame13.BackgroundColor = BrickColor.new("Black")
+Frame13.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Frame13.BorderColor = BrickColor.new("Institutional white")
+Frame13.BorderColor3 = Color3.new(1, 1, 1)
+Frame13.BorderSizePixel = 0
+TextLabel14.Parent = Frame13
+TextLabel14.Position = UDim2.new(0.0434782356, 0, -9.37668609e-09, 0)
+TextLabel14.Size = UDim2.new(0.913043499, 0, 0.106594406, 0)
+TextLabel14.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel14.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel14.BackgroundTransparency = 1
+TextLabel14.Font = Enum.Font.SourceSans
+TextLabel14.FontSize = Enum.FontSize.Size14
+TextLabel14.Text = "Accessories:"
+TextLabel14.TextColor = BrickColor.new("Institutional white")
+TextLabel14.TextColor3 = Color3.new(1, 1, 1)
+TextLabel14.TextScaled = true
+TextLabel14.TextSize = 14
+TextLabel14.TextWrap = true
+TextLabel14.TextWrapped = true
+Frame15.Parent = Frame13
+Frame15.Position = UDim2.new(0.0381243937, 0, 0.106594391, 0)
+Frame15.Size = UDim2.new(0.918397188, 0, 0.863909245, 0)
+Frame15.BackgroundColor = BrickColor.new("Black")
+Frame15.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+Frame15.BackgroundTransparency = 1
+Frame15.BorderColor = BrickColor.new("Institutional white")
+Frame15.BorderColor3 = Color3.new(1, 1, 1)
+Frame15.BorderSizePixel = 0
+UIListLayout16.Parent = Frame15
+UIListLayout16.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout16.Padding = UDim.new(0, 7)
+Frame17.Name = "ui"
+Frame17.Parent = Frame15
+Frame17.Size = UDim2.new(1.0000006, 0, 0.461027563, 0)
+Frame17.BackgroundColor = BrickColor.new("Dark taupe")
+Frame17.BackgroundColor3 = Color3.new(0.298039, 0.298039, 0.298039)
+Frame17.BorderColor = BrickColor.new("Institutional white")
+Frame17.BorderColor3 = Color3.new(1, 1, 1)
+Frame17.BorderSizePixel = 0
+TextLabel18.Parent = Frame17
+TextLabel18.Position = UDim2.new(0.0236707106, 0, 0.0845269561, 0)
+TextLabel18.Size = UDim2.new(0.931924343, 0, 0.915472865, 0)
+TextLabel18.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel18.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel18.BackgroundTransparency = 1
+TextLabel18.Font = Enum.Font.SourceSans
+TextLabel18.FontSize = Enum.FontSize.Size14
+TextLabel18.Text = "Christmas Antlers"
+TextLabel18.TextColor = BrickColor.new("Really red")
+TextLabel18.TextColor3 = Color3.new(1, 0, 0)
+TextLabel18.TextSize = 14
+TextButton19.Parent = Frame17
+TextButton19.Size = UDim2.new(1, 0, 1, 0)
+TextButton19.BackgroundColor = BrickColor.new("Institutional white")
+TextButton19.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton19.BackgroundTransparency = 1
+TextButton19.Font = Enum.Font.SourceSans
+TextButton19.FontSize = Enum.FontSize.Size14
+TextButton19.Text = ""
+TextButton19.TextColor = BrickColor.new("Really black")
+TextButton19.TextColor3 = Color3.new(0, 0, 0)
+TextButton19.TextSize = 14
+Frame20.Name = "ui"
+Frame20.Parent = Frame15
+Frame20.Size = UDim2.new(1.0000006, 0, 0.461027563, 0)
+Frame20.BackgroundColor = BrickColor.new("Dark taupe")
+Frame20.BackgroundColor3 = Color3.new(0.298039, 0.298039, 0.298039)
+Frame20.BorderColor = BrickColor.new("Institutional white")
+Frame20.BorderColor3 = Color3.new(1, 1, 1)
+Frame20.BorderSizePixel = 0
+TextLabel21.Parent = Frame20
+TextLabel21.Position = UDim2.new(0.0236707106, 0, 0.0845269561, 0)
+TextLabel21.Size = UDim2.new(0.931924343, 0, 0.915473342, 0)
+TextLabel21.BackgroundColor = BrickColor.new("Institutional white")
+TextLabel21.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel21.BackgroundTransparency = 1
+TextLabel21.Font = Enum.Font.SourceSans
+TextLabel21.FontSize = Enum.FontSize.Size14
+TextLabel21.Text = "DRC's Wings"
+TextLabel21.TextColor = BrickColor.new("Really blue")
+TextLabel21.TextColor3 = Color3.new(0, 0.0156863, 1)
+TextLabel21.TextSize = 14
+TextButton22.Parent = Frame20
+TextButton22.Size = UDim2.new(1, 0, 1, 0)
+TextButton22.BackgroundColor = BrickColor.new("Institutional white")
+TextButton22.BackgroundColor3 = Color3.new(1, 1, 1)
+TextButton22.BackgroundTransparency = 1
+TextButton22.Font = Enum.Font.SourceSans
+TextButton22.FontSize = Enum.FontSize.Size14
+TextButton22.Text = ""
+TextButton22.TextColor = BrickColor.new("Really black")
+TextButton22.TextColor3 = Color3.new(0, 0, 0)
+TextButton22.TextSize = 14
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = owner.PlayerGui
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
+
+for i,v in pairs(Frame2:GetChildren()) do
+	if v:IsA("Frame") then
+		v.Visible = false
+	end
+end
+
+for i,v in pairs(Frame15:GetChildren()) do
+	if v:IsA("Frame") then
+		v.Visible = false
+	end
+end
+
+wait(.1)
+
+if owner.UserId == 34493685 then
+	Frame20.Visible = true
+	Frame7.Visible = true
+end
+
+if owner.UserId == 1805528783 then
+	Frame17.Visible = true
+	Frame7.Visible = true
+	Frame4.Visible = true
+end
+
+owner.Chatted:Connect(function(m)
+	if m == string.lower("/openHUD") then
+		Frame1.Visible = true
+	end
+	if m == string.lower("/closeHUD") then
+		Frame1.Visible = false
+	end
+end)
+
+TextButton6.MouseButton1Click:Connect(function()
+	loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/TrapzFX-RBXScripts/Knife-HUD/main/Candycane_TFX2"))()
+end)
+
+TextButton9.MouseButton1Click:Connect(function()
+	loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/TrapzFX-RBXScripts/Knife-HUD/main/Fiery_drc3"))()
+end)
